@@ -1,6 +1,9 @@
 from requests import post
 from random import randint as r
-from wdonate_exception import WdonateError
+
+class WdonateError(Exception):
+    def __init__(self, text):
+        self.txt = text
 
 class wdonate:
     def __init__(self, token: str, group_id:int):
@@ -59,5 +62,3 @@ class wdonate:
             pass
         raise WdonateError('requests error. maybe invalid token or group_id or value invalid')
         
-
-print(wdonate('wwef', 32434).getLink(0, -1))
