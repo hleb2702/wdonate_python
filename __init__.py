@@ -6,6 +6,6 @@
 '''
 
 __author__ = 'Hleb2702'
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 __email__ = 'glebstetko2@gmail.com'
 
