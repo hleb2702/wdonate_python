@@ -9,7 +9,7 @@
 Сначало инициализируем класс:
 
 `from wdonate import wdonate  
-wd = wdonate('токен wdonate', group_id)`
+  wd = wdonate('токен wdonate', group_id)`
 
 Методы к котором вы можете далее обратиться:
 
