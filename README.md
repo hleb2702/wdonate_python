@@ -10,19 +10,38 @@ pip install wdonate
 
 Сначало инициализируем класс:
 
-`from wdonate import wdonate wd = wdonate('токен wdonate', group_id)`
+```
+from wdonate import wdonate
+wd = wdonate('токен wdonate', group_id)
+```
 
 Методы к котором вы можете далее обратиться:
 
-`wd.getBalance() -> float - получение баланса`
+```
+wd.getBalance() -> float - получение баланса
+```
 
-`wd.getLink(user_id: int, amount: float = 0, payload: int = 0, pay_method: str = 'card') -> dict `
-Получение ссылки для оплаты
+Получение ссылки для оплаты:
+```
+wd.getLink(user_id: int, amount: float = 0, payload: int = 0, pay_method: str = 'card') -> dict
+```
 
-`wd.getPayments(count: int = 0) -> dict `- получение списка последних донатов
+получение списка последних донатов:
+```
+wd.getPayments(count: int = 0) -> dict
+```
 
-`wd.getCallback() -> dict `- получение текущей url callback
+получение текущей url callback:
+```
+wd.getCallback() -> dict
+```
 
-`wd.setCallback(url: str) -> dict` - установка url callback
+установка url callback:
+```
+wd.setCallback(url: str) -> dict
+```
 
-`wd.delCallback() -> dict` - удаление текущей url callback
+удаление текущей url callbac
+```
+wd.delCallback() -> dict
+```
