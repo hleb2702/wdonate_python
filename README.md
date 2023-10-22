@@ -1,24 +1,27 @@
-#Как пользоваться библиотекой?
+# Как пользоваться библиотекой?
 
 Сайт: wdonate.ru
 Автор питон библы: vk.com/id486001202
 
+Для установки:
+`pip install wdonate`
+
 Сначало инициализируем класс:
 
-from wdonate.wdonate import wdonate
-wd = wdonate('токен wdonate', group_id)
+`from wdonate import wdonate
+wd = wdonate('токен wdonate', group_id)`
 
 Методы к котором вы можете далее обратиться:
 
-wd.getBalance() -> float - получение баланса
+`wd.getBalance() -> float - получение баланса`
 
-wd.getLink(user_id: int, amount: float = 0, payload: int = 0, pay_method: str = 'card') -> dict 
+`wd.getLink(user_id: int, amount: float = 0, payload: int = 0, pay_method: str = 'card') -> dict `
 Получение ссылки для оплаты
 
-wd.getPayments(count: int = 0) -> dict - получение списка последних донатов
+`wd.getPayments(count: int = 0) -> dict `- получение списка последних донатов
 
-wd.getCallback() -> dict - получение текущей url callback
+`wd.getCallback() -> dict `- получение текущей url callback
 
-wd.setCallback(url: str) -> dict - установка url callback
+`wd.setCallback(url: str) -> dict` - установка url callback
 
-wd.delCallback() -> dict - удаление текущей url callback
+`wd.delCallback() -> dict` - удаление текущей url callback
