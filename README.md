@@ -4,7 +4,7 @@
 Автор питон библы: vk.com/id486001202
 
 Для установки:
-`pip install wdonate`
+```pip install wdonate```
 
 Сначало инициализируем класс:
 
