@@ -16,6 +16,7 @@ wd = wdonate('токен wdonate', group_id)
 ```
 
 Методы к котором вы можете далее обратиться:
+
 Получение баланса:
 ```python
 wd.getBalance() -> float
