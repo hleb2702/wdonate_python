@@ -10,10 +10,10 @@ pip install wdonate
 
 Сначало инициализируем класс:
 
-``python
+```python
 from wdonate import wdonate
 wd = wdonate('токен wdonate', group_id)
-``
+```
 
 Методы к котором вы можете далее обратиться:
 
