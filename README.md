@@ -8,7 +8,7 @@
 pip install wdonate
 ```
 
-Сначало инициализируем класс:
+Сначала инициализируем класс:
 
 ```python
 from wdonate import wdonate
